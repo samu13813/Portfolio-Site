@@ -11,7 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" type="text/css" href="css/styles2.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
 </head>
 
 <body>
@@ -27,36 +28,39 @@
           <a role="menuitem" href="about.html" class="navigation-list__item">About</a>
         </li>
         <li role="presentation">
-          <a role="menuitem" href="contact.html" class="navigation-list__item--active">Contact</a>
+          <a role="menuitem" href="work.html" class="navigation_list__item">Work</a>
         </li>
         <li role="presentation">
-          <a role="menuitem" href="work.html" class="navigation_list__item">Work</a>
+          <a role="menuitem" href="contact.html" class="navigation-list__item--active">Contact</a>
         </li>
       </ul>
     </nav>
 
   </header>
 
-  <div>
-    Samuel Garcia <br>
-    <a href="mailto:samuel.gsuero@gmail.com">samuel.gsuero@gmail.com</a><br>
-    <a href="mailto:samuel.gsuero@gmail.com">Contact me</a><br><br>
+  <div class="content">
+    <div>
+      Samuel Garcia <br>
+      <a href="mailto:samuel.gsuero@gmail.com">samuel.gsuero@gmail.com</a><br>
+      <a href="mailto:samuel.gsuero@gmail.com">Contact me</a><br><br>
+    </div>
+
+    <form id="contact-form" action="contact.html" method="post">
+      <label class="standard-label" for="contact-email">*Email:</label><br>
+      <input id="contact-email" type="email" name="contact-email" placeholder="Your Email" required><br><br>
+
+      <label class="standard-label" for="contact-teleph">Telephone:</label><br>
+      <input id="contact-teleph" type="tel" name="contact-teleph" placeholder="Your Telephone Number"><br><br>
+
+      <label class="standard-label" for="msg">*Your Message:</label><br>
+      <textarea id="msg" name="msg" rows="5" cols="45" placeholder="Say Hi!" required maxlength="240"></textarea><br>
+
+      <p><i>* Required value</i></p>
+
+      <input class="submit_button" type="submit" value="Send Message">
+    </form>
   </div>
 
-  <form id="contact-form" action="contact.html" method="post">
-    <label class="standard-label" for="contact-email">*Email:</label><br>
-    <input id="contact-email" type="email" name="contact-email" placeholder="Your Email" required><br><br>
-
-    <label class="standard-label" for="contact-teleph">Telephone:</label><br>
-    <input id="contact-teleph" type="tel" name="contact-teleph" placeholder="Your Telephone Number"><br><br>
-
-    <label class="standard-label" for="msg">*Your Message:</label><br>
-    <textarea id="msg" name="msg" rows="5" cols="45" placeholder="Say Hi!" required maxlength="240"></textarea><br>
-
-    <p><i>* Required value</i></p>
-
-    <input class="submit_button" type="submit" value="Send Message">
-  </form>
 
   <footer class="page_footer">
     <!-- Footer with social media -->
