@@ -4,15 +4,17 @@
 }
 
 :root {
-  --primary-color: #357b70;
-  --secondary-color: #e0b354;
-  --dark-grey: #2b2b2b;
-  --link-visited: #05676e;
-  --link-active: #489c79;
+  --primary-color: #F0E9D2;
+  --secondary-color: #E6DDC4;
+  --footer-color: #142F43;
+  --third-color: #8E8D8A;
+  --link-visited: #678983;
+  --link-active: #678983;
   --first-sun-color: #edc655;
   --second-sun-color: #fcffad;
   --third-sun-color: #f76414;
   --border-color: #D3D3D3;
+  --text-color: #EEEEEE;
   --bold-text: 700;
   --center-text: center;
   --h1-size: 30px;
@@ -20,7 +22,7 @@
   --h3-size: 18px;
 }
 
-header, footer {
+header {
   background-color: var(--secondary-color);
 }
 
@@ -30,7 +32,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.6;
-  background-color: var(--border-color);
+  background-color: var(--secondary-color);
 }
 
 footer {
@@ -40,6 +42,7 @@ footer {
   width: 100%;
   height: -100px;
   vertical-align: baseline;
+  background-color: var(--footer-color);
 }
 
 h1 {
@@ -65,7 +68,7 @@ table, td{
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--link-active);
   text-align: center;
 }
 
@@ -90,9 +93,9 @@ button, .about_button{
   font-family: inherit;
   display: inline-flex;
   text-decoration: none;
-  background-color: var(--primary-color);
+  background-color: var(--link-active);
   font-size: 16px;
-  color: #fff !important;
+  color: var(--text-color) !important;
   margin: 30px auto;
   padding: 10px;
   border-radius: 3px;
@@ -158,7 +161,7 @@ button:hover, button:focus, .about_button:hover, .about_button:focus {
   display: flex;
   /* width: 100%; */
   padding: 20px;
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--footer-color);
 }
 
 .page_header__item {
@@ -177,8 +180,9 @@ button:hover, button:focus, .about_button:hover, .about_button:focus {
 }
 
 .grid__item {
-  background-color: var(--border-color);
+  background-color: var(--link-active);
   padding: 20px;
+  color: var(--text-color);
 }
 
 .about_text {
@@ -212,6 +216,10 @@ button:hover, button:focus, .about_button:hover, .about_button:focus {
 
 .page_footer {
   position: absolute;
+}
+
+.footer_text {
+  color: var(--text-color);
 }
 
 .contact_content {
