@@ -208,11 +208,7 @@ button:hover, button:focus, .about_button:hover, .about_button:focus {
   padding-right: 10px;
 }
 
-.about_body {
-  text-align: var(--center-text);
-}
-
-.work_title {
+.about_body, .work_title {
   text-align: var(--center-text);
 }
 
@@ -238,7 +234,6 @@ button:hover, button:focus, .about_button:hover, .about_button:focus {
   border-radius: 5px;
   margin: 50px auto;
   background-color: var(--grid-color);
-  resize: horizontal;
   /* border-bottom: 2px solid rgba(0, 0, 0, 0.8);
   border-right: 2px solid rgba(0, 0, 0, 0.7); */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
@@ -273,11 +268,12 @@ textarea {
   border: 1px solid #ccc;
   outline: none;
   padding-bottom: 10px;
+  resize: none;
 }
 
 #contact-form {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .standard-label__item {
@@ -372,4 +368,21 @@ textarea {
   h1 {
     font-size: 22px;
   }
+}
+
+@media (max-width: 1150px) {
+  .input-row {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .input-group-email {
+    margin-top: 40px;
+  }
+
+  .contact_footer {
+    position: static;
+  }
+
 }
