@@ -290,6 +290,8 @@ textarea {
   flex-basis: 45%;
 }
 
+
+
 /* SVG */
 
 .sun {
@@ -385,4 +387,11 @@ textarea {
     position: static;
   }
 
+}
+
+@media (max-height: 850px) {
+  .contact_footer{
+    position: static;
+    bottom: 0;
+  }
 }
