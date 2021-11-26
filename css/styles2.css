@@ -290,8 +290,6 @@ textarea {
   flex-basis: 45%;
 }
 
-
-
 /* SVG */
 
 .sun {
@@ -383,15 +381,105 @@ textarea {
     margin-top: 40px;
   }
 
-  .contact_footer {
+  #contact_footer {
     position: static;
   }
 
 }
 
-@media (max-height: 850px) {
+/* @media (max-height: 850px) {
   .contact_footer{
     position: static;
     bottom: 0;
+  }
+}
+
+@media (max-width:500px) {
+  .page_footer {
+    position: static;
+    bottom: 0;
+  }
+} */
+
+@media (max-width: 370px) {
+  .page_header {
+    display: block;
+  }
+}
+
+@media (max-width: 435px) {
+  .profile_portrait {
+    float: none;
+  }
+  svg {
+    display: none;
+  }
+  #about_footer {
+    position: absolute;
+  }
+  .about_body {
+    padding-bottom: 150px;
+  }
+  #contact-form {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 641px) {
+  #home_footer {
+    position: static;
+    bottom: 0;
+  }
+}
+
+@media (max-height: 790px) {
+  #home_footer {
+    position: static;
+    bottom: 0;
+  }
+  #about_footer {
+    position: absolute;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_body {
+    padding-bottom: 110px;
+  }
+  .contact_content {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 200px;
+  }
+  .footer_text_contact {
+    margin-top: 0px;
+  }
+}
+
+
+@media (max-width: 961px) {
+  #contact_footer{
+    position: static;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 845px) {
+  svg {
+    height: 300px
+  }
+}
+
+@media (max-width: 1024px) {
+  .about_body {
+    padding-bottom: 200px;
+  }
+}
+
+@media (max-width: 1500px) {
+  #contact_footer{
+    position: static;
   }
 }
